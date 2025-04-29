@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 export default function Button({
   text = "Some text",
   icon,
@@ -17,4 +19,18 @@ export default function Button({
       {icon && <span>{icon}</span>} {text}
     </button>
   );
+}
+
+Button.propTypes = {
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.string,
+    size: PropTypes.oneOf(["small", "medium", "large"]),
+    variant: PropTypes.string,
+    fullWidth: PropTypes.bool,
+    isDisabled: PropTypes.bool,
+    onClick: PropTypes.func
+}
+
+Button.defaultProps = {
+    text: "my button"
 }
