@@ -1,9 +1,15 @@
+import Button from "./Button";
+
 export default function Main() {
+
+
+
   return (
     <main className="component-showcase">
       <section className="component-group">
         <h2>Variants</h2>
         <div className="component-card">
+          <Button text="Hello World" variant="danger" size="small" fullWidth isDisabled={false}/>
           <button className="button primary">Primary</button>
           <button className="button secondary">Secondary</button>
           <button className="button danger">Danger</button>
