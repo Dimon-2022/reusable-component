@@ -8,6 +8,7 @@ export default function Button({
   fullWidth = false,
   isDisabled = false,
   onClick,
+  children
 }) {
   return (
     <button
@@ -16,7 +17,7 @@ export default function Button({
       }`}
       onClick={onClick}
     >
-      {icon && <span>{icon}</span>} {text}
+      {icon && <span>{icon}</span>} {children}
     </button>
   );
 }

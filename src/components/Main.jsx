@@ -9,7 +9,7 @@ export default function Main() {
       <section className="component-group">
         <h2>Variants</h2>
         <div className="component-card">
-          <Button variant="danger" size="large" fullWidth isDisabled={false}/>
+          <Button>Hello children</Button>
           <button className="button primary">Primary</button>
           <button className="button secondary">Secondary</button>
           <button className="button danger">Danger</button>
